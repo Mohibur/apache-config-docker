@@ -1,8 +1,8 @@
-# Services are the parent of the container, container is a docker term
+# Docker Compose will create a service using the name of your root directory
 services:
-# docker compose will create a image name `web`
+# docker compose create a image using the name web. The image name would be something like ${root-dir-name}-web
   web:
-    # we will use httpweb 
+    # we will use httpweb image
     # we will create httpweb image 
     # using docker command, see readme.md file for this
     image: httpweb
