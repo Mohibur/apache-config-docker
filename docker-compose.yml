@@ -1,0 +1,15 @@
+# Services are the parent of the container, container is a docker term
+services:
+# docker compose will create a image name `web`
+  web:
+    # we will use httpweb 
+    # we will create httpweb image 
+    # using docker command, see readme.md file for this
+    image: httpweb
+    # We will tell docker compose to map port 80, 
+    # so that we can access from host machine
+    ports:
+      - "80:80"
+      # I am creating another mapping for better understanding
+      - "8080:80"
+
